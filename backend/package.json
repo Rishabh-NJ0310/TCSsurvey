@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc && nodemon src\\server.js"
+  },
+  "author": "Rishabh Maheshwari",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/mongodb": "^4.0.6",
+    "@types/multer": "^1.4.12",
+    "@types/sharp": "^0.31.1",
+    "axios": "^1.8.4",
+    "child_process": "^1.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "fs-extra": "^11.3.0",
+    "mongodb": "^6.16.0",
+    "multer": "^1.4.5-lts.2",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^5.1.91",
+    "sharp": "^0.34.1",
+    "tesseract.js": "^6.0.1"
+  },
+  "devDependencies": {
+    "pdf-page-counter": "^1.0.3",
+    "pdf-poppler": "^0.2.1",
+    "typescript": "^5.8.3"
+  }
+}
