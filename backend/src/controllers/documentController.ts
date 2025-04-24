@@ -185,7 +185,7 @@ const processOCR = async (filePath: string): Promise<any> => {
 const extractDataFromText = (text: string): any => {
   // Initialize the structured data object
   const data: any = {
-    applicantName: "",
+    applicant_name: "",
     address: {
       street: "",
       city: "",
@@ -204,7 +204,7 @@ const extractDataFromText = (text: string): any => {
   const nameMatch = text.match(/Name:?\s*([A-Za-z\s]+)/i) || 
                     text.match(/Applicant:?\s*([A-Za-z\s]+)/i);
   if (nameMatch && nameMatch[1]) {
-    data.applicantName = nameMatch[1].trim();
+    data.applicant_name = nameMatch[1].trim();
   }
   
   // Extract address components

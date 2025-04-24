@@ -184,7 +184,7 @@ const processOCR = (filePath) => __awaiter(void 0, void 0, void 0, function* () 
 const extractDataFromText = (text) => {
     // Initialize the structured data object
     const data = {
-        applicantName: "",
+        applicant_name: "",
         address: {
             street: "",
             city: "",
@@ -202,7 +202,7 @@ const extractDataFromText = (text) => {
     const nameMatch = text.match(/Name:?\s*([A-Za-z\s]+)/i) ||
         text.match(/Applicant:?\s*([A-Za-z\s]+)/i);
     if (nameMatch && nameMatch[1]) {
-        data.applicantName = nameMatch[1].trim();
+        data.applicant_name = nameMatch[1].trim();
     }
     // Extract address components
     // Street address

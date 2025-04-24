@@ -238,7 +238,7 @@ export default function Home() {
                   <div className="grid grid-cols-1 gap-4 p-4 bg-muted/30 rounded-md">
                     <div>
                       <Label className="text-xs text-muted-foreground">Applicant Name</Label>
-                      <p className="font-medium">{ocrData.applicantName || "Not detected"}</p>
+                      <p className="font-medium">{ocrData.applicant_Name || "Not detected"}</p>
                     </div>
                   </div>
                 </div>
